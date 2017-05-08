@@ -7,8 +7,8 @@
             "meta": {
                 "accessList": [
                     "tab1",
-                    "tab6",
-                    "tab2"
+                    "tab2",
+                    "tab6"
                 ]
             },
             "name": "pane1",
@@ -18,8 +18,7 @@
                     "name": "tab1",
                     "path": "",
                     "className": [
-                        "tab1",
-                        "focus"
+                        "tab1"
                     ],
                     "document": {
                         "changed": false,
@@ -61,10 +60,6 @@
                         "tab6"
                     ],
                     "document": {
-                        "changed": false,
-                        "meta": {
-                            "timestamp": 1494192710335
-                        },
                         "filter": true,
                         "title": "BlinkLED/BlinkLED.js - Idle",
                         "tooltip": "BlinkLED/BlinkLED.js - Idle",
@@ -72,13 +67,19 @@
                             "id": "output651790",
                             "width": 0,
                             "height": 0,
+                            "scrollTop": -1,
                             "config": {
                                 "runner": "Node.js",
                                 "command": "BlinkLED/BlinkLED.js",
                                 "toolbar": true,
                                 "debug": true
                             }
-                        }
+                        },
+                        "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "meta": {
+                            "timestamp": 1494192710335
+                        },
+                        "changed": false
                     },
                     "editorType": "output",
                     "active": false
@@ -104,16 +105,16 @@
             "@ace": 1,
             "@acestatus": 1,
             "@datagrid": 1,
-            "@divider": 5,
-            "@document": 12,
-            "@form": 6,
-            "@menu": 5,
-            "@menuitem": 13,
+            "@divider": 1,
+            "@document": 6,
+            "@form": 5,
+            "@menu": 3,
+            "@menuitem": 6,
             "@pane": 2,
             "@preferences": 1,
-            "@session": 11,
-            "@tab": 12,
-            "@undoManager": 12,
+            "@session": 3,
+            "@tab": 13,
+            "@undoManager": 6,
             "@welcome": 1
         }
     },
@@ -132,8 +133,8 @@
     },
     "panecycle": {
         "json()": [
-            "tab1",
-            "tab3"
+            "tab3",
+            "tab1"
         ]
     },
     "panels": {
@@ -176,11 +177,12 @@
     },
     "tabs": {
         "json()": {
-            "focus": "tab1",
+            "focus": "tab3",
             "meta": {
                 "accessList": [
                     "tab3",
-                    "tab0"
+                    "tab0",
+                    "tab12"
                 ]
             },
             "name": "pane0",
@@ -193,14 +195,15 @@
                         "tab0"
                     ],
                     "document": {
-                        "changed": false,
+                        "filter": true,
+                        "title": "Welcome",
+                        "welcome": {},
+                        "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
                         "meta": {
                             "welcome": true,
                             "timestamp": 1494151888583
                         },
-                        "filter": true,
-                        "title": "Welcome",
-                        "welcome": {}
+                        "changed": false
                     },
                     "editorType": "welcome",
                     "active": false
@@ -210,7 +213,8 @@
                     "name": "tab3",
                     "path": "",
                     "className": [
-                        "tab3"
+                        "tab3",
+                        "focus"
                     ],
                     "document": {
                         "changed": false,
@@ -218,8 +222,8 @@
                             "timestamp": 1494151976136
                         },
                         "filter": true,
-                        "title": "bash - \"beaglebone\"",
-                        "tooltip": "bash - \"beaglebone\"",
+                        "title": "export - \"beaglebone\"",
+                        "tooltip": "export - \"beaglebone\"",
                         "terminal": {
                             "id": "devel_207",
                             "cwd": "",
@@ -229,6 +233,27 @@
                     },
                     "editorType": "terminal",
                     "active": true
+                },
+                {
+                    "type": "tab",
+                    "name": "tab12",
+                    "path": "",
+                    "className": [
+                        "tab12"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1494199195844
+                        },
+                        "filter": true,
+                        "title": "Preferences",
+                        "preferences": {
+                            "activePanel": "preferences.keybindings"
+                        }
+                    },
+                    "editorType": "preferences",
+                    "active": false
                 }
             ],
             "skin": "editor_tab",
