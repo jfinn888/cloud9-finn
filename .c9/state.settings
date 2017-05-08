@@ -106,16 +106,16 @@
             "@acestatus": 1,
             "@datagrid": 1,
             "@divider": 1,
-            "@document": 6,
+            "@document": 5,
             "@form": 5,
-            "@menu": 6,
-            "@menuitem": 12,
+            "@menu": 3,
+            "@menuitem": 6,
             "@pane": 2,
             "@preferences": 1,
-            "@session": 3,
-            "@tab": 13,
+            "@session": 2,
+            "@tab": 5,
             "@tree": 2,
-            "@undoManager": 6,
+            "@undoManager": 5,
             "@welcome": 1
         }
     },
@@ -125,6 +125,9 @@
         "@regex": "false",
         "@scope": "selection",
         "@wholeword": "false"
+    },
+    "installer": {
+        "json()": {}
     },
     "menus": {
         "@minimized": false
@@ -169,7 +172,28 @@
         "@showfs": true,
         "expanded": {
             "json()": [
-                "/BlinkLED"
+                "/BlinkLED",
+                "/",
+                "/autorun",
+                "/examples",
+                "!favorites",
+                "!fsroot",
+                "~/.c9/plugins"
+            ]
+        },
+        "favorites": {
+            "json()": [
+                {
+                    "path": "~/.c9/plugins",
+                    "labelPath": "plugins",
+                    "isFavorite": true,
+                    "isRootContext": true,
+                    "isFolder": true,
+                    "offset": 2,
+                    "status": "loaded",
+                    "isOpen": true,
+                    "wasOpen": false
+                }
             ]
         }
     },
@@ -178,44 +202,22 @@
     },
     "tabs": {
         "json()": {
-            "focus": "tab3",
+            "focus": "tab1",
             "meta": {
                 "accessList": [
-                    "tab3",
-                    "tab0",
-                    "tab12"
+                    "tab12",
+                    "tab3"
                 ]
             },
             "name": "pane0",
             "nodes": [
                 {
                     "type": "tab",
-                    "name": "tab0",
-                    "path": "",
-                    "className": [
-                        "tab0"
-                    ],
-                    "document": {
-                        "filter": true,
-                        "title": "Welcome",
-                        "welcome": {},
-                        "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
-                        "meta": {
-                            "welcome": true,
-                            "timestamp": 1494151888583
-                        },
-                        "changed": false
-                    },
-                    "editorType": "welcome",
-                    "active": false
-                },
-                {
-                    "type": "tab",
                     "name": "tab3",
                     "path": "",
                     "className": [
                         "tab3",
-                        "focus"
+                        "connecting"
                     ],
                     "document": {
                         "changed": false,
@@ -223,8 +225,8 @@
                             "timestamp": 1494151976136
                         },
                         "filter": true,
-                        "title": "export - \"beaglebone\"",
-                        "tooltip": "export - \"beaglebone\"",
+                        "title": "bash - \"beaglebone\"",
+                        "tooltip": "bash - \"beaglebone\"",
                         "terminal": {
                             "id": "devel_207",
                             "cwd": "",
@@ -243,15 +245,16 @@
                         "tab12"
                     ],
                     "document": {
-                        "changed": false,
-                        "meta": {
-                            "timestamp": 1494199195844
-                        },
                         "filter": true,
                         "title": "Preferences",
                         "preferences": {
-                            "activePanel": "preferences.keybindings"
-                        }
+                            "activePanel": "preferences.general"
+                        },
+                        "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+                        "meta": {
+                            "timestamp": 1494199195844
+                        },
+                        "changed": false
                     },
                     "editorType": "preferences",
                     "active": false
@@ -270,8 +273,6 @@
         }
     },
     "tree_selection": {
-        "json()": [
-            "/"
-        ]
+        "json()": []
     }
 }
